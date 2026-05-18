@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+
+body {
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* *****************************Nav-Bar********************************** */
+.nav-bar {
+    background-color: #f5f3ff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+
+.logo-hilo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #333333;
+}
+
+.logo-hilo img {
+    height: 40px;
+    width: 40px;
+    background-color: #8e51ff;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(31, 28, 28, 0.742);
+}
+
+.nav-links li a:hover {
+    color: #862bfe;
+    border-bottom: #862bfe solid 2px;
+}
+
+.nav-links li a:focus {
+    color: #862bfe;
+    border-bottom: #862bfe solid 2px;
+}
+
+/********************************Head-Content*****************************/
+.head-content {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 10% 40px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+.camera-image {
+    flex: 1;
+    margin-top: 50px;
+    border: #666 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.camera-image::before {
+    content: "-12% OFF";
+    position: absolute;
+    background-color: #8e51ff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    width: 18%;
+    border-radius: 100px;
+    color: #f5f3ff;
+    left: 7%;
+    top: 7%;
+    text-align: center;
+}
+
+.camera-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    transition: 0.5s ease;
+}
+.camera-image img:hover{
+    transform: scale(1.08);
+    border-radius:9px ;
+}
+
+.head-info {
+    margin-top: 80px;
+    flex: 1;
+}
+
+.p {
+    display: flex;
+    gap: 20px;
+}
+
+.p p {
+    background-color: #9b59b6;
+    color: white;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content .info {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.main-content .save {
+    background-color: #ffe2e2;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.contain {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-content strong {
+    font-size: 32px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.main-content del {
+    color: #999;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.comment {
+    margin-top: 10px;
+    color: rgb(60, 58, 58);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+.btn button {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+.add {
+    background-color: #8e51ff;
+    color: white;
+}
+
+.add:hover {
+    background-color: #5f4669;
+}
+
+.add-to {
+    background-color: transparent;
+    border: 2px solid #eee !important;
+    color: #333;
+}
+
+.heart {
+    width: 5%;
+    position: absolute;
+    left: 30%;
+    top: 23%;
+}
+
+.add-to:hover {
+    background-color: #f0f0f0;
+}
+
+/**********************************Table-Data******************************/
+.table-container {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #f7f5ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**********************************table-title*****************************/
+.title-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.title-table h2 {
+    color: #333333;
+    font-size: 35px;
+}
+
+.title-table h2 span {
+    color: #8e51ff;
+}
+
+.title-table p {
+    font-size: 20px;
+    letter-spacing: 2;
+    color: 333333;
+}
+
+/**********************************Main-Table******************************/
+.table-contain {
+    justify-self: center;
+    margin-top: 40px;
+}
+
+.table-contain table tr td {
+    padding: 30px;
+}
+
+.table-contain table thead tr td {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+table {
+    border: #6666667d solid 1px;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    background-color: #ffffff;
+}
+
+thead .box,
+tbody .box,
+tfoot .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+thead tr td small {
+    display: block;
+    color: #6a7282;
+    font-size: 15px;
+}
+
+.box-1 {
+    color: #7008e7;
+}
+
+.box-1 small {
+    color: #7008e78d;
+    font-weight: 200;
+}
+
+.box-2 {
+    background-color: #8e51ff;
+    width: 65%;
+    margin-left: 18%;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.box-3 {
+    color: #9208e7c9;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+tbody tr::after {
+    content: "";
+    width: 93%;
+    height: 2px;
+    background-color: #66666645;
+    position: absolute;
+    left: 28px;
+    border-radius: 20px;
+}
+
+tfoot::before {
+    content: "";
+    width: 93%;
+    height: 2px;
+    background-color: #66666645;
+    position: absolute;
+    left: 28px;
+    border-radius: 20px;
+}
+
+tbody td img {
+    width: 22px;
+}
+
+tbody td:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+tfoot td img {
+    width: 22px;
+}
+
+thead th.highlight::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: -20px;
+    left: 21.8%;
+    background-color: #ede9fe;
+    width: 18%;
+    height: 98%;
+    z-index: -1;
+    left: 22.4%;
+    border-radius: 15px;
+}
+
+tfoot td:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+tfoot tr td:not(:first-child) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tro-logo img {
+    width: 33px;
+    height: auto;
+    display: block;
+}
+
+.table-card {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+    background-color: #ffffff;
+    max-width: fit-content;
+    padding: 25px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+    border: 1px solid #eef0f2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #00a63e;
+}
+
+.text h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+/**********************************Review-title*****************************/
+.review-container {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.review-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.review-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    color: #333333;
+}
+
+.review-title h3 {
+    font-size: 35px;
+}
+
+.review-title h3 span {
+    color: #7f22fe;
+}
+
+.review-title p {
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+/************************************review-card***************************/
+
+.survey img {
+    width: 22px;
+}
+
+
+.review-content .survey {
+    border: #6666665f solid 1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    position: sticky;
+    top: 60px;
+}
+
+.rating-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.survey h3 {
+    font-size: 50px;
+}
+
+.survey span {
+    font-size: 16px;
+    color: #444;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    background-color: #e5e7eb;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.progress-1 {
+    height: 100%;
+    background-color: #f0b100;
+    border-radius: 10px;
+    width: 78%;
+}
+
+.progress-2 {
+    height: 100%;
+    background-color: #f0b100;
+    border-radius: 10px;
+    width: 15%;
+}
+
+.progress-3 {
+    height: 100%;
+    background-color: #f0b100;
+    border-radius: 10px;
+    width: 5%;
+}
+
+.progress-4 {
+    height: 100%;
+    background-color: #f0b100;
+    border-radius: 10px;
+    width: 1.5%;
+}
+
+.progress-5 {
+    height: 100%;
+    background-color: #f0b100;
+    border-radius: 10px;
+    width: 0.5%;
+}
+
+
+
+.percent {
+    min-width: 45px;
+    text-align: right;
+    font-size: 14px;
+    color: #444;
+}
+
+.font-star {
+    color: #444;
+}
+
+.overall-rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.overall-rate h4 {
+    font-size: 25px;
+}
+
+.overall-rate span {
+    font-size: 14px;
+    color: #444;
+}
+
+.ra-line {
+    width: 95%;
+    margin-top: 20px;
+    color: #444;
+}
+
+/**************************************************************************/
+.comment-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-1 {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 0.8px solid #6007a4;
+}
+
+.rate-logo img {
+    width: 18px;
+}
+
+
+.card {
+    border: 1px solid #44444431;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+    border: #6666665f solid 1px;
+}
+
+.card .info {
+    width: 100%;
+    font-size: 20px;
+    color: #3a3535;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.name-content h5 {
+    font-size: 18px;
+}
+
+.name-content p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.name span {
+    background-color: #ede9fe;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 15px;
+    color: #6007a4;
+}
+
+.date {
+    font-size: 14px;
+    color: #444;
+}
+
+.rate {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 60%;
+    margin-left: 65px;
+}
+
+.btn-comment {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    width: 25%;
+    font-size: 17px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #7f22fe;
+    border: 1px solid transparent;
+}
+
+.btn-comment:hover {
+    background-color: #ffffff;
+    color: #7f22fe;
+    transition: 0.3s ease-in;
+    border: 2px solid #7f22fe;
+}
+
+/*********************************Setup-Title******************************/
+.setup-container {
+    width: 100%;
+    background-color: #f7f5ff;
+    padding-bottom: 5px;
+}
+
+.setup-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.setup-title h4 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.setup-title h4 span {
+    color: #8e22fe;
+}
+
+.setup-title p {
+    color: #444;
+    font-size: 20px;
+}
+
+/******************************Matrial-Card********************************/
+.matrial-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 50px;
+    flex-wrap: wrap;
+
+}
+
+.matrial-card {
+    display: flex;
+    min-width: 280px;
+    max-width: 320px;
+    border: 1px solid #4444444b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.header-card img {
+    width: 80%;
+    border-radius: 15px;
+    display: block;
+    margin-left: 10%;
+    margin-top: 5%;
+    transition: 0.3s ease;
+}
+
+.header-card {
+    position: relative;
+}
+
+.header-card span {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.Accessory {
+    background-color: #00bba7;
+}
+
+.safe {
+    background-color: #ff6900;
+}
+
+.power {
+    background-color: #00b8db;
+}
+
+.Essential {
+    background-color: #00c950;
+}
+
+.body-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.body-card h4 {
+    font-size: 20px;
+}
+
+.body-card p {
+    max-width: 250px;
+    text-align: start;
+    font-size: 17px;
+    text-align: start;
+    color: #282626;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-card span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-card button {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #8e51ff;
+}
+
+.footer-card button:hover {
+    background-color: #ede9fe;
+    color: #8e51ff;
+    transition: 0.2s ease-in;
+}
+
+.header-card:hover img {
+    transform: scale(1.05);
+}
+
+.m-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.matrial-btn {
+    background-color: transparent;
+    color: #7f22fe;
+    border: 2px solid #7f22fe;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.matrial-btn:hover {
+    background-color: #7f22fe;
+    color: white;
+}
+
+/**********************************Footer**********************************/
+footer {
+    background-color: #101828;
+    color: #ffffff;
+    padding: 50px 100px;
+}
+
+footer .title img {
+    width: 40px;
+    background-color: #7f22fe;
+}
+
+.links a {
+    padding: 5px;
+}
+
+.links a img {
+    width: 40px;
+    background-color: #353c49;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.d-parent {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    position: relative;
+}
+
+.dji-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.dji-logo .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dji-logo .title h4 {
+    font-size: 25px;
+}
+
+.dji-logo p {
+    max-width: 280px;
+    text-align: start;
+    padding: 20px 0;
+}
+
+.f:hover {
+    background-color: #1877f2;
+}
+
+.x:hover {
+    background-color: #1da1f2;
+}
+
+.i:hover {
+    background-color: #e4405f;
+}
+
+.y:hover {
+    background-color: #ff0000;
+}
+
+.product,
+.support,
+.company {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product h5,
+.support h5,
+.company h5 {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.product ul li,
+.support ul li,
+.company ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.product a,
+.support a,
+.company a {
+    text-decoration: none;
+    color: #9fafbc;
+}
+
+.product a:hover {
+    color: #ffffff;
+}
+
+.support a:hover {
+    color: #ffffff;
+}
+
+.company a:hover {
+    color: #ffffff;
+}
+
+.dji-logo::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: #394356;
+    position: absolute;
+    bottom: -30px;
+}
+.end-footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end-footer p{
+    font-size: 15px;
+}
+.payment-logo{
+    display: flex;
+    gap: 10px;
+}
+.payment-logo img {
+    width: auto;
+    height: 40px;
+    object-fit: contain;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.payment-logo img:hover{
+    transform: scale(1.08);
+}
+
+
